@@ -130,6 +130,7 @@ address {
 
 #about .content {
   font-size: 1.5rem;
+  line-height: 20px;
 }
 
 /* update each card with background img rel path*/
