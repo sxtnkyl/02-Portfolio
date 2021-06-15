@@ -118,7 +118,7 @@ address {
   position: relative;
 }
 
-.descrip {
+.card .description {
   position: absolute;
   bottom: 10%;
   left: 0;
