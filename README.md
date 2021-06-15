@@ -1,6 +1,6 @@
 ## 02-Portfolio
 
-<!-- ![The Horiseon webpage](Screenshot.PNG) -->
+![The portfolio webpage](/assets/images/02screenshot.PNG)
 
 Second homework assignment focused on creating a portfolio landing page from scratch.
 Technical challenges include:

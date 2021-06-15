@@ -14,21 +14,28 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  color: var(--border);
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 a {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 address {
   display: flex;
   justify-content: space-around;
+  font-size: medium;
 }
 
 .nav {
@@ -70,12 +77,12 @@ address {
 .section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 30px;
+  justify-content: space-around;
+  margin: 30px;
 }
 
 .section h2 {
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   border-right: 10px solid var(--border);
   text-align: end;
   padding-right: 20px;
@@ -93,6 +100,10 @@ address {
   color: var(--border);
 }
 
+.content p {
+  margin-bottom: 10px;
+}
+
 .card {
   border: 10px solid var(--border);
   margin: 10px;
@@ -104,13 +115,22 @@ address {
   flex-basis: calc(50% - 20px);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-/* .card h3 {
+.descrip {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  min-height: 25%;
+  min-width: 20%;
+  background-color: var(--border);
+  padding: 20px;
 }
 
-.card p {
-} */
+#about .content {
+  font-size: 1.5rem;
+}
 
 /* update each card with background img rel path*/
 #proj1 {
@@ -131,9 +151,10 @@ address {
 #proj5 {
   background-image: url("../images/digital-marketing-meeting.jpg");
 }
-#proj6 {
-  background-image: url("../images/digital-marketing-meeting.jpg");
-}
-#proj7 {
-  background-image: url("../images/digital-marketing-meeting.jpg");
+
+@media screen and (max-width: 992px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+    height: 250px;
+  }
 }
