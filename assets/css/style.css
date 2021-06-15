@@ -38,31 +38,47 @@ address {
   font-size: medium;
 }
 
-.nav {
+header {
   padding: 20px;
   background-color: var(--border);
   color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav h1 {
+header h1 {
   display: inline-block;
   font-size: 4rem;
+  margin: 0px 20px;
 }
 
-.nav nav {
+header nav {
   padding-top: 15px;
   margin-right: 20px;
+  margin-left: auto;
   float: right;
   font-size: 2rem;
 }
 
-.nav ul {
+header ul {
   list-style-type: none;
 }
 
-.nav li {
+header li {
   display: inline-block;
   margin-left: 25px;
+}
+
+.avatar {
+  border: 1px solid white;
+  border-radius: 50%;
+  background-image: url("../images/profilePic.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
 }
 
 .hero {
@@ -78,7 +94,8 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 30px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .section h2 {
@@ -94,10 +111,6 @@ address {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px 0px;
-}
-
-.content a {
-  color: var(--border);
 }
 
 .content p {
@@ -116,6 +129,11 @@ address {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.card:hover {
+  filter: grayscale(80%);
+  cursor: pointer;
 }
 
 .card .description {
@@ -153,9 +171,44 @@ address {
   background-image: url("../images/digital-marketing-meeting.jpg");
 }
 
+#contact a {
+  color: var(--border);
+}
+
 @media screen and (max-width: 992px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  nav {
+    margin: 10px 0px;
+  }
   .card {
     flex-basis: calc(100% - 20px);
     height: 250px;
+    margin: 20px 0px;
+    min-height: 250px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .section h2 {
+    flex: 0 0 100%;
+    border-left: 10px solid var(--border);
+    text-align: start;
+    padding-left: 20px;
+  }
+  .section .content {
+    flex: 0 0 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+  address {
+    flex-direction: column;
+    justify-content: center;
+  }
+  address a {
+    align-self: center;
+    margin: 10px 0px;
   }
 }
