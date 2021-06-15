@@ -1,0 +1,139 @@
+:root {
+  --border: #0072bb;
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+address {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  padding: 20px;
+  background-color: var(--border);
+  color: #ffffff;
+}
+
+.nav h1 {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.nav nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 2rem;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.hero {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 30px;
+}
+
+.section h2 {
+  flex: 0 0 25%;
+  border-right: 10px solid var(--border);
+  text-align: end;
+  padding-right: 20px;
+}
+
+.section .content {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+
+.content a {
+  color: var(--border);
+}
+
+.card {
+  border: 10px solid var(--border);
+  margin: 10px;
+  min-height: 150px;
+  min-width: 300px;
+  background-color: green;
+  color: black;
+  /* flex-basis: get half minus border+padding */
+  flex-basis: calc(50% - 20px);
+  background-size: cover;
+  background-position: center;
+}
+
+/* .card h3 {
+}
+
+.card p {
+} */
+
+/* update each card with background img rel path*/
+#proj1 {
+  flex-basis: 100%;
+  height: 400px;
+  background-color: hotpink;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj2 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj3 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj4 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj5 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj6 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
+#proj7 {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+}
